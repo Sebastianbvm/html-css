@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span class="material-symbols-outlined" id="burger" onclick="clickMenu()">
+            menu 
+        </span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores quos id aut eum pariatur. Placeat molestias nam ipsum voluptas, omnis sint adipisci distinctio suscipit praesentium. Ipsum placeat eos sed.</span><span>Eum, temporibus! Totam explicabo voluptatibus doloribus aperiam quaerat assumenda illo? Provident accusamus dolorum, obcaecati soluta labore molestiae? Totam sed, accusamus cum ipsum inventore autem obcaecati animi quisquam similique porro in.</span></p>
+
+            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernatur officiis aliquam ut earum iste illum voluptate quod tenetur, cumque quas ratione, ipsum, eum possimus eos repellat! Eum, placeat corporis?</span><span>Eligendi delectus velit facilis sed eum, aliquam beatae et numquam maiores nemo doloremque pariatur ullam. Consectetur esse quaerat molestias rem nemo. Ex dignissimos in error maiores quia cumque excepturi itaque.</span></p>
+
+            <p><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dignissimos fugit consectetur modi hic, in cumque temporibus explicabo amet laboriosam quo labore at ut debitis officia a alias ratione veritatis.</span><span>Ducimus, explicabo doloribus! Nisi repellendus fugiat nam non eveniet dolor ipsum delectus, vero animi velit tempore architecto est, harum iure ipsam repellat modi cum, atque a vitae illo temporibus distinctio?</span><span>Dicta at, explicabo ut repudiandae dignissimos necessitatibus earum quasi recusandae deserunt ea maxime, tenetur quisquam, minima rerum corporis sit quod ab repellat ex eius blanditiis laboriosam quae libero obcaecati! Repellendus.</span></p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
