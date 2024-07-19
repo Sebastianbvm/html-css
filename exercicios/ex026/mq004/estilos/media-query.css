@@ -1,0 +1,74 @@
+@charset "UFT-8";
+
+/*Todas as demais Mídias*/
+
+/*Typical Device Breakpoints
+- 600px
+600px - 768px
+769px - 992px
+993px - 1200px
+1201px +
+*/
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+    
+    main h1{      
+        text-shadow: none;
+        color: black;
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: block; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 728px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone { display: none; }
+    #tablet { display: block; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: block; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: block; }
+}
